@@ -52,4 +52,25 @@ header {
 
 main {
   background-color: lightgray;
+
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+main .projects {
+  grid-row-start: span 2;
+}
+
+.projects .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.projects .cards > div {
+  border: 1px solid black;
+  min-height: 200px;
 }
