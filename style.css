@@ -23,15 +23,23 @@
   padding: 20px;
 }
 
-.nav {
+nav {
   background-color: slateblue;
   grid-row-start: span 2;
+  padding: 20px;
+
+  display: grid;
+  grid-template-rows: 75px 1fr auto;
 }
 
-.header {
+nav ul {
+  list-style-type: none;
+}
+
+header {
   background-color: white;
 }
 
-.body {
+main {
   background-color: lightgray;
 }
