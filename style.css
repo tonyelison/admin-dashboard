@@ -126,16 +126,18 @@ main {
   height: calc(100% - var(--grid-gap));
 }
 
-.widget.announcement .card-content > div {
+.list-item {
   padding-block: 10px;
-  border-bottom: 1px solid gray;
 }
 
-.widget.announcement .card-content > div:first-child {
+.list-item:first-child {
   padding-top: 0;
 }
 
-.widget.announcement .card-content > div:last-child {
+.list-item:last-child {
   padding-bottom: 0;
-  border-bottom: none;
+}
+
+.widget.announcement .list-item:not(:last-child) {
+  border-bottom: 1px solid lightgray;
 }

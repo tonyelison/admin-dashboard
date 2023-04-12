@@ -114,6 +114,7 @@ projects.forEach((item) => {
 const announcementCard = document.querySelector(".widget.announcement .card-content");
 announcements.forEach((a) => {
   const item = document.createElement("div");
+  item.classList.add("list-item");
 
   const title = document.createElement("h5");
   title.textContent = a.title;
@@ -130,6 +131,7 @@ announcements.forEach((a) => {
 const trendingCard = document.querySelector(".widget.trending .card-content");
 trendingUsers.forEach((user) => {
   const item = document.createElement("div");
+  item.classList.add("list-item");
 
   const handle = document.createElement("h5");
   handle.textContent = user.handle;
