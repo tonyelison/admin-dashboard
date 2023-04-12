@@ -48,6 +48,14 @@ const announcements = [
     title: "Announcement GHI",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
+  {
+    title: "Announcement JKL",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    title: "Announcement MNO",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
 ];
 
 const trendingUsers = [
@@ -76,37 +84,41 @@ const trendingUsers = [
 // generate project cards
 const cardGrid = document.querySelector(".card-grid");
 projects.forEach((item) => {
-  let card = document.createElement("div");
+  const card = document.createElement("div");
   card.classList.add("card");
 
-  let title = document.createElement("h4");
+  const cardContent = document.createElement("div");
+  cardContent.classList.add("card-content");
+
+  const title = document.createElement("h4");
   title.textContent = item.title;
   
-  let desc = document.createElement("div");
+  const desc = document.createElement("div");
   desc.classList.add("desc");
   desc.textContent = item.desc;
 
-  let actions = document.createElement("div");
+  const actions = document.createElement("div");
   actions.classList.add("card-actions");
   item.actions.forEach((action) => {
-    let actionItem = document.createElement("div");
+    const actionItem = document.createElement("div");
     actionItem.classList.add(action);
     actions.appendChild(actionItem);
   });
 
-  card.append(title, desc, actions);
+  cardContent.append(title, desc, actions);
+  card.appendChild(cardContent);
   cardGrid.appendChild(card);
 });
 
 // populate announcements
-const announcementCard = document.querySelector(".widget.announcement .card");
+const announcementCard = document.querySelector(".widget.announcement .card-content");
 announcements.forEach((a) => {
-  let item = document.createElement("div");
+  const item = document.createElement("div");
 
-  let title = document.createElement("h5");
+  const title = document.createElement("h5");
   title.textContent = a.title;
   
-  let desc = document.createElement("div");
+  const desc = document.createElement("div");
   desc.classList.add("desc");
   desc.textContent = a.desc;
 
