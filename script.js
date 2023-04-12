@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Project ABC",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    actions: ["favorite", "hide", "history"],
+    actions: ["favorite", "edit", "delete"],
   },
   {
     title: "Project DEF",
@@ -16,22 +16,22 @@ const projects = [
   {
     title: "Project GHI",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    actions: ["favorite", "hide"],
+    actions: ["favorite"],
   },
   {
     title: "Project JKL",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    actions: ["favorite", "history"],
+    actions: ["favorite", "delete"],
   },
   {
     title: "Project ABC",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    actions: ["favorite", "hide", "history"],
+    actions: ["favorite", "edit", "delete"],
   },
   {
     title: "Project ABC",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    actions: ["favorite", "hide", "history"],
+    actions: ["favorite", "edit", "delete"],
   },
 ];
 

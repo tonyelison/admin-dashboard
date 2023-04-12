@@ -103,19 +103,25 @@ main {
 }
 
 .card-actions > div {
-  width: 40px;
+  width: 35px;
+  height: 35px;
 }
 
-.card-actions .favorite::before {
-  content: 'F';
+.card-actions > div:hover {
+  cursor: pointer;
+  color:slateblue;
 }
 
-.card-actions .hide::before {
-  content: 'V';
+.card-actions .favorite {
+  background-image: url(./assets/star-plus-outline.svg);
 }
 
-.card-actions .history::before {
-  content: 'H';
+.card-actions .edit {
+  background-image: url(./assets/pencil-outline.svg);
+}
+
+.card-actions .delete {
+  background-image: url(./assets/trash-can-outline.svg);
 }
 
 .widget.announcement,
