@@ -52,23 +52,24 @@ main {
   background-color: lightgray;
 
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
   padding: 20px;
 }
 
-main .projects {
+.widget.main {
   grid-row-start: span 2;
 }
 
-.projects .cards {
+.widget .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 
-.projects .cards > div {
-  border: 1px solid black;
-  min-height: 200px;
+.card {
+  background-color: white;
+  border-radius: 8px;
+  min-height: 230px;
 }
