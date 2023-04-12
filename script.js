@@ -62,22 +62,22 @@ const trendingUsers = [
   {
     handle: "user123",
     name: "Some User",
-    avatar: "1"
+    avatarUrl: "./assets/user.svg",
   },
   {
     handle: "user124",
     name: "Some User",
-    avatar: "2"
+    avatarUrl: "./assets/user.svg",
   },
   {
     handle: "user125",
     name: "Some User",
-    avatar: "3"
+    avatarUrl: "./assets/user.svg",
   },
   {
     handle: "user126",
     name: "Some User",
-    avatar: "4"
+    avatarUrl: "./assets/user.svg",
   },
 ];
 
@@ -133,6 +133,13 @@ trendingUsers.forEach((user) => {
   const item = document.createElement("div");
   item.classList.add("list-item");
 
+  const avatar = document.createElement("img");
+  avatar.classList.add("avatar");
+  avatar.src = user.avatarUrl;
+
+  const info = document.createElement("div");
+  info.classList.add("info");
+
   const handle = document.createElement("h5");
   handle.textContent = user.handle;
   
@@ -140,6 +147,7 @@ trendingUsers.forEach((user) => {
   name.classList.add("name");
   name.textContent = user.name;
 
-  item.append(handle, name);
+  info.append(handle, name);
+  item.append(avatar, info);
   trendingCard.appendChild(item);
 });

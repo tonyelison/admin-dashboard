@@ -87,7 +87,9 @@ main {
   height: 100%;
   overflow-y: auto;
   padding: 20px;
+}
 
+.widget.main .card-content {
   display: flex;
   flex-direction: column;
 }
@@ -140,4 +142,19 @@ main {
 
 .widget.announcement .list-item:not(:last-child) {
   border-bottom: 1px solid lightgray;
+}
+
+.widget.trending .list-item {
+  display: flex;
+  gap: 12px;
+}
+
+.avatar {
+  --avatar-size: 40px;
+
+  height: var(--avatar-size);
+  width: var(--avatar-size);
+  background-color: lightblue;
+  border-radius: 50%;
+  padding: 4px;
 }
