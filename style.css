@@ -100,3 +100,7 @@ main {
 .card-actions .history::before {
   content: 'H';
 }
+
+.widget.announcement .card {
+  overflow-y: auto;
+}

@@ -41,11 +41,11 @@ const announcements = [
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
-    title: "Announcement ABC",
+    title: "Announcement DEF",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
-    title: "Announcement ABC",
+    title: "Announcement GHI",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
 ];
@@ -96,4 +96,20 @@ projects.forEach((item) => {
 
   card.append(title, desc, actions);
   cardGrid.appendChild(card);
+});
+
+// populate announcements
+const announcementCard = document.querySelector(".widget.announcement .card");
+announcements.forEach((a) => {
+  let item = document.createElement("div");
+
+  let title = document.createElement("h5");
+  title.textContent = a.title;
+  
+  let desc = document.createElement("div");
+  desc.classList.add("desc");
+  desc.textContent = a.desc;
+
+  item.append(title, desc);
+  announcementCard.appendChild(item);
 });
