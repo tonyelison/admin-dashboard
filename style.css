@@ -49,13 +49,16 @@ header {
 }
 
 main {
+  --grid-gap: 20px;
+  --side-widget-max-height: 367px;
+
   background-color: lightgray;
 
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 50% 1fr;
-  gap: 20px;
-  padding: 20px;
+  grid-template-rows: min(50%, var(--side-widget-max-height)) 1fr;
+  gap: var(--grid-gap);
+  padding: var(--grid-gap);
 }
 
 .widget.main {
@@ -63,9 +66,11 @@ main {
 }
 
 .widget .card-grid {
+  min-height: calc(100% - var(--grid-gap));
+
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  gap: var(--grid-gap);
 }
 
 .card {
@@ -75,7 +80,7 @@ main {
 }
 
 .widget.main .card {
-  min-height: 230px;
+  min-height: 200px;
 }
 
 .card-content {
@@ -111,8 +116,14 @@ main {
   content: 'H';
 }
 
-.widget.widget.announcement .card {
-  height: calc(100% - 20px);
+.widget.announcement,
+.widget.trending {
+  max-height: var(--side-widget-max-height);
+}
+
+.widget.announcement .card,
+.widget.trending .card {
+  height: calc(100% - var(--grid-gap));
 }
 
 .widget.announcement .card-content > div {
