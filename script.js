@@ -125,3 +125,19 @@ announcements.forEach((a) => {
   item.append(title, desc);
   announcementCard.appendChild(item);
 });
+
+// populate trending
+const trendingCard = document.querySelector(".widget.trending .card-content");
+trendingUsers.forEach((user) => {
+  const item = document.createElement("div");
+
+  const handle = document.createElement("h5");
+  handle.textContent = user.handle;
+  
+  const name = document.createElement("div");
+  name.classList.add("name");
+  name.textContent = user.name;
+
+  item.append(handle, name);
+  trendingCard.appendChild(item);
+});
