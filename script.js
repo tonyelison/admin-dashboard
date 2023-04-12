@@ -141,7 +141,7 @@ trendingUsers.forEach((user) => {
   info.classList.add("info");
 
   const handle = document.createElement("h5");
-  handle.textContent = user.handle;
+  handle.textContent = "@" + user.handle;
   
   const name = document.createElement("div");
   name.classList.add("name");
