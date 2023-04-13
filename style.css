@@ -6,9 +6,9 @@
 }
 
 body {
-  /* font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #737373; */
+  color: #737373;
   
   min-height: 100vh; /* remove this */
 
@@ -45,6 +45,10 @@ nav li a {
   gap: 10px;
 }
 
+nav .logo {
+  gap: 5px;
+}
+
 nav img {
   height: 1em;
   width: 1em;
@@ -52,7 +56,8 @@ nav img {
 }
 
 nav .logo {
-  font-size: 32px;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 nav .logo img {
