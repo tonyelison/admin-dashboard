@@ -18,17 +18,15 @@ body {
 }
 
 body > * {
-  padding: 20px;
+  --section-padding: 20px;
+  
+  padding: var(--section-padding);
 }
 
 nav {
   background-color: slateblue;
   color: white;
   grid-row-start: span 2;
-  padding: 20px;
-
-  display: grid;
-  grid-template-rows: 75px 1fr 1fr;
 }
 
 nav ul {
@@ -42,6 +40,15 @@ nav li a {
 
 nav li a:hover {
   text-decoration: underline;
+}
+
+.nav-links {
+  position: sticky;
+  top: var(--section-padding);
+
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr;
+  gap: 25px;
 }
 
 header {
