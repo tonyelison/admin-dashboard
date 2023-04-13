@@ -5,7 +5,7 @@ Mock Data
 const projects = [
   {
     title: "Project ABC",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     actions: ["favorite", "edit", "delete"],
   },
   {
@@ -20,17 +20,17 @@ const projects = [
   },
   {
     title: "Project JKL",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     actions: ["favorite", "delete"],
   },
   {
-    title: "Project ABC",
+    title: "Project MNO",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     actions: ["favorite", "edit", "delete"],
   },
   {
-    title: "Project ABC",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Project PQR",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     actions: ["favorite", "edit", "delete"],
   },
 ];
