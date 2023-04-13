@@ -92,7 +92,8 @@ header {
 }
 
 main {
-  --grid-gap: 20px;
+  --grid-gap: 30px;
+  --grid-item-height-adjust: 36.5px; /* grid item heights must exclude h2 height */
   --side-widget-max-height: 367px;
 
   background-color: var(--color-primary-light);
@@ -104,12 +105,16 @@ main {
   padding: var(--grid-gap);
 }
 
+main h2 {
+  margin-bottom: 8px; 
+}
+
 .widget.main {
   grid-row-start: span 2;
 }
 
 .widget .card-grid {
-  min-height: calc(100% - var(--grid-gap));
+  min-height: calc(100% - var(--grid-item-height-adjust));
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -173,7 +178,7 @@ main {
 
 .widget.announcement .card,
 .widget.trending .card {
-  height: calc(100% - var(--grid-gap));
+  height: calc(100% - var(--grid-item-height-adjust));
 }
 
 .list-item {
