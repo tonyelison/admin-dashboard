@@ -7,11 +7,12 @@
 
 body {
   --color-primary: #5b21b6;
+  --color-primary-medium: #8b5cf6;
   --color-primary-light: #e5e4ed;
 
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: black;
+  color: #0f172a;
   
   min-height: 100vh; /* remove this */
 
@@ -107,18 +108,24 @@ main {
 
 main h2 {
   margin-bottom: 8px; 
+  font-weight: 500;
 }
 
 .widget.main {
   grid-row-start: span 2;
 }
 
-.widget .card-grid {
+.card-grid {
   min-height: calc(100% - var(--grid-item-height-adjust));
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--grid-gap);
+}
+
+.card-grid h4 {
+  margin-block: 10px;
+  font-size: 20px;
 }
 
 .card {
@@ -129,6 +136,7 @@ main h2 {
 
 .widget.main .card {
   min-height: 200px;
+  border-left: 8px solid var(--color-primary-medium);
 }
 
 .card-content {
@@ -140,6 +148,7 @@ main h2 {
 .widget.main .card-content {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .card-actions {
@@ -171,6 +180,11 @@ main h2 {
   background-image: url(./assets/trash-can-outline.svg);
 }
 
+.widget.announcement h5 {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
 .widget.announcement,
 .widget.trending {
   max-height: var(--side-widget-max-height);
@@ -182,7 +196,7 @@ main h2 {
 }
 
 .list-item {
-  padding-block: 10px;
+  padding-block: 20px;
 }
 
 .list-item:first-child {
