@@ -132,6 +132,7 @@ main h2 {
 .card {
   background-color: white;
   border-radius: 8px;
+  box-shadow: 3px 3px 10px 0 #c1bdc8;
   overflow: hidden;
 }
 
