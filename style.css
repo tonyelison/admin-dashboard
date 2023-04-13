@@ -51,6 +51,11 @@ nav li a:hover {
   gap: 25px;
 }
 
+.nav-links img {
+  height: 1rem;
+  width: 1rem;
+}
+
 header {
   background-color: white;
 }
