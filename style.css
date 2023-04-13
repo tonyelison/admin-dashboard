@@ -54,6 +54,7 @@ nav li a:hover {
 .nav-links img {
   height: 1rem;
   width: 1rem;
+  filter: invert(99%) sepia(100%) saturate(9%) hue-rotate(251deg) brightness(106%) contrast(100%);
 }
 
 header {
