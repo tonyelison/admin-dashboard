@@ -1,123 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <title>Admin Dashboard</title>
-</head>
-<body>
-  <nav>
-    <div class="nav-links">
-      <div class="logo">
-        <img src="./assets/dashboard.svg">
-        <span class="nav-label">Dashboard</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-links">
+        <div class="logo">
+          <img src="./assets/dashboard.svg" />
+          <span class="nav-label">Dashboard</span>
+        </div>
+        <ul>
+          <li>
+            <a href="">
+              <img src="./assets/home.svg" />
+              <span class="nav-label">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./assets/profile-details.svg" />
+              <span class="nav-label">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./assets/message.svg" />
+              <span class="nav-label">Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./assets/clock.svg" />
+              <span class="nav-label">History</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./assets/file-multiple.svg" />
+              <span class="nav-label">Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./assets/account-group.svg" />
+              <span class="nav-label">Communities</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="">
+              <img src="./assets/cog.svg" />
+              <span class="nav-label">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./assets/help-box.svg" />
+              <span class="nav-label">Support</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./assets/shield-check.svg" />
+              <span class="nav-label">Privacy</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul>
-        <li>
-          <a href="">
-            <img src="./assets/home.svg">
-            <span class="nav-label">Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="./assets/profile-details.svg">
-            <span class="nav-label">Profile</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="./assets/message.svg">
-            <span class="nav-label">Messages</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="./assets/clock.svg">
-            <span class="nav-label">History</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="./assets/file-multiple.svg">
-            <span class="nav-label">Tasks</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="./assets/account-group.svg">
-            <span class="nav-label">Communities</span>
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="">
-            <img src="./assets/cog.svg">
-            <span class="nav-label">Settings</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="./assets/help-box.svg">
-            <span class="nav-label">Support</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="./assets/shield-check.svg">
-            <span class="nav-label">Privacy</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <header>
-    <div class="search">
-      <img src="./assets/search.svg" alt="magnifying glass">
-      <input type="text">
-    </div>
-    <div class="user-btns">
-      <img class="bell-alerts" src="./assets/bell-outline.svg" alt="bell">
-      <img class="avatar" src="./assets/user.svg" alt="user avatar">
-      <div class="user-name">Morgan Oakley</div>
-    </div>
-    <div class="greeting">
-      <img class="avatar" src="./assets/user.svg" alt="user avatar">
-      <div>
-        <div>Hi there,</div>
-        <h2>Morgan Oakley</h2>
+    </nav>
+    <header>
+      <div class="search">
+        <img src="./assets/search.svg" alt="magnifying glass" />
+        <input type="text" />
       </div>
-    </div>
-    <div class="actions">
-      <button>New</button>
-      <button>Upload</button>
-      <button>Share</button>
-    </div>
-  </header>
-  <main>
-    <div class="widget main">
-      <h2>Your Projects</h2>
-      <div class="card-grid"></div>
-    </div>
-    <div class="widget announcement">
-      <h2>Announcements</h2>
-      <div class="card">
-        <div class="card-content"></div>
+      <div class="user-btns">
+        <img class="bell-alerts" src="./assets/bell-outline.svg" alt="bell" />
+        <img class="avatar" src="./assets/user.svg" alt="user avatar" />
+        <div class="user-name">Morgan Oakley</div>
       </div>
-    </div>
-    <div class="widget trending">
-      <h2>Trending</h2>
-      <div class="card">
-        <div class="card-content"></div>
+      <div class="greeting">
+        <img class="avatar" src="./assets/user.svg" alt="user avatar" />
+        <div>
+          <div>Hi there,</div>
+          <h2>Morgan Oakley</h2>
+        </div>
       </div>
-    </div>
-  </main>
-</body>
+      <div class="actions">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </header>
+    <main>
+      <div class="widget main">
+        <h2>Your Projects</h2>
+        <div class="card-grid"></div>
+      </div>
+      <div class="widget announcement">
+        <h2>Announcements</h2>
+        <div class="card">
+          <div class="card-content"></div>
+        </div>
+      </div>
+      <div class="widget trending">
+        <h2>Trending</h2>
+        <div class="card">
+          <div class="card-content"></div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

@@ -10,10 +10,10 @@ body {
   --color-primary-medium: #8b5cf6;
   --color-primary-light: #e5e4ed;
 
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #0f172a;
-  
+
   min-height: 100vh; /* remove this */
 
   display: grid;
@@ -23,7 +23,7 @@ body {
 
 body > * {
   --section-padding: 20px;
-  
+
   padding: var(--section-padding);
 }
 
@@ -56,7 +56,8 @@ nav .logo {
 nav img {
   height: 1em;
   width: 1em;
-  filter: invert(99%) sepia(100%) saturate(9%) hue-rotate(251deg) brightness(106%) contrast(100%);
+  filter: invert(99%) sepia(100%) saturate(9%) hue-rotate(251deg)
+    brightness(106%) contrast(100%);
 }
 
 nav .logo {
@@ -198,7 +199,7 @@ main {
 }
 
 main h2 {
-  margin-bottom: 8px; 
+  margin-bottom: 8px;
   font-weight: 500;
 }
 
